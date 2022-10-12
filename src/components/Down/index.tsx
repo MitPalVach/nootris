@@ -2,9 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import cn from 'classnames';
 import styles from './styles.module.scss';
-import ginger from '../../assets/images/ginger.png';
-import tablets from '../../assets/images/tablets.png';
-import virus from '../../assets/images/virus.png';
+import ginger from '../../../public/assets/images/ginger.png';
+import tablets from '../../../public/assets/images/tablets.png';
+import virus from '../../../public/assets/images/virus.png';
 
 const Down: React.FC = () => {
   return (

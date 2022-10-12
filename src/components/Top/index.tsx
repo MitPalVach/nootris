@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import mainImg from '../../assets/images/mainImg.png';
+import mainImg from '../../../public/assets/images/mainImg.png';
 import styles from './styles.module.scss';
 
 const Top: React.FC = () => {

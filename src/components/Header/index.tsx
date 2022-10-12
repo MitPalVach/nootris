@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import Image from 'next/image';
-import logo from '../../assets/images/logo.svg';
-import basket from '../../assets/images/basket.svg';
+import logo from '../../../public/assets/images/logo.svg';
+import basket from '../../../public/assets/images/basket.svg';
 import Nav from "../Nav/index";
 import NavMobile from "../../components/NavMobile";
 import Basket from "../../components/Modal/Basket";
