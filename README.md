@@ -1,8 +1,8 @@
 # nootris - test project
 
-use yarn
+used yarn;
 
-typescript
-module scss
-nextjs
-eslint
+typescript;
+module scss;
+nextjs;
+eslint;
