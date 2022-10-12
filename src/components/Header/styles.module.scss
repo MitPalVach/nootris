@@ -1,0 +1,77 @@
+@import "../../styles/variables";
+
+.header {
+  z-index: 3;
+  display: flex;
+  padding: 0 90px 0 60px;
+  align-items: center;
+  height: 80px;
+  background-color: $bgDark;
+}
+
+.menuBtn {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 104px;
+}
+
+.btnBasket {
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.count {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  border-radius: 100%;
+  background-color: $orange;
+  color: #000;
+}
+
+@media (max-width: 1291px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .menuBtn {
+    display: block;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    padding: 0
+  }
+
+  .menuBtnLine {
+    background: $bgDark;
+    height: 5px;
+    width: 33px;
+    margin: 5px 0;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .btnBasket {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .header {
+    padding: 0 20px;
+  }
+}

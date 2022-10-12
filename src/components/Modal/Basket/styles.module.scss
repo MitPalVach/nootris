@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.basketInner {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  overflow-y: scroll;
+  height: 100vh;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, .7);
+
+}
+
+.basketInner.active {
+  transform: scale(1);
+}
+
+.basketContent {
+  position: fixed;
+  top: 20%;
+  right: 20%;
+  left: 20%;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #FFF;
+}
+
+.basketText {
+  color: $bgDark;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  @extend %rubik-bold;
+}

@@ -1,0 +1,293 @@
+@import "../../styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 64px;
+  //width: 100%;
+  background-color: $bgDark;
+
+  .title {
+    margin: 90px 0;
+    width: 68%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    @extend %rubik-bold;
+    position: relative;
+    z-index: 3;
+
+    div {
+      color: $orange;
+    }
+  }
+
+  .prices {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+
+
+    .oldPrice {
+      text-decoration: line-through;
+      color: $grey;
+      margin-right: 30px;
+      font-size: 2.2rem;
+      @extend %rubik-reg;
+    }
+
+    .newPrice {
+      color: $white;
+      font-size: 3rem;
+      @extend %rubik-reg;
+    }
+  }
+
+  .images {
+    margin-bottom: 44px;
+    display: flex;
+  }
+
+  .tablets {
+    margin: 0 120px;
+  }
+
+  .items {
+    margin-bottom: 64px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    max-width: 1090px;
+    width: 100%;
+
+    .itemWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .middleWrapper {
+      margin: 0 11rem;
+    }
+
+    .mini {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+      color: $white;
+      @extend %rubik-reg;
+    }
+
+    .middle {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      color: $white;
+      text-align: center;
+      @extend %rubik-reg;
+      position: relative;
+      //margin-left: 50px;
+
+      span {
+        position: absolute;
+        bottom: 2px;
+        left: -28px;
+      }
+    }
+
+    .orange {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+      color: $orange;
+      @extend %rubik-reg;
+    }
+  }
+
+  .btn {
+    padding: 22px 44px;
+    font-size: 1.4rem;
+    @extend %rubik-reg;
+    background-color: $orange;
+    color: $black;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: linear .2s;
+
+    &:hover {
+      box-shadow: 0 0 5px 5px $orange;
+    }
+
+  }
+
+  .wrapperM {
+    display: none;
+  }
+  .miniM, .middleM {
+    color: $white;
+    @extend %rubik-reg;
+  }
+  .orangeM {
+    @extend %rubik-reg;
+
+  }
+}
+
+
+
+@media (max-width: 1336px) {
+  .container {
+    .title {
+      font-size: 2.1rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+
+@media (max-width: 1198px) {
+  .container {
+    .items {
+      margin-bottom: 50px;
+      width: 100%;
+    }
+
+    .items {
+      .mini {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+
+      .orange {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+
+      .middle {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+
+        span {
+          left: -18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .container {
+    padding: 0 40px 60px;
+
+    .title {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+}
+
+@media (max-width: 844px) {
+  .container {
+    .title {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    .prices {
+      margin-bottom: 30px;
+
+      .oldPrice {
+        font-size: 1.2rem;
+      }
+
+      .newPrice {
+        font-size: 1.3rem;
+      }
+    }
+
+    .items {
+      .mini {
+        font-size: .8rem;
+        line-height: .8rem;
+      }
+
+      .orange {
+        font-size: .8rem;
+        line-height: 1rem;
+      }
+
+      .middle {
+        font-size: 1rem;
+        line-height: 1rem;
+
+        span {
+          left: -14px;
+        }
+      }
+    }
+
+    .btn {
+      padding: 11px 22px;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+@media (max-width: 774px) {
+  .container {
+    .items {
+      .middle {
+        span {
+          display: none
+        }
+      }
+
+      .orange {
+        text-align: center;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 724px) {
+  .container {
+    .wrapper, .items {
+      display: none;
+    }
+
+    .wrapperM {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      .itemM {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .itemDescrM {
+          margin-top: 1rem;
+
+          .orangeM {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 456px) {
+  .container {
+    .title {
+      font-size: 1.1rem;
+      line-height: 1.2rem;
+    }
+  }
+}

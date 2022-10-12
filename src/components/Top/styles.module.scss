@@ -1,0 +1,180 @@
+@import "../../styles/variables";
+
+.container {
+  background-image: url("../../assets/images/bg.png");
+  padding: 107px 0 96px 64px;
+  position: relative;
+
+  .title {
+    margin: 10px 0 30px;
+    font-size: 9rem;
+    line-height: 9rem;
+    @extend %rubik-bold;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    z-index: 2;
+  }
+
+  .descr {
+    margin-bottom: 114px;
+    width: 640px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: $black;
+    position: relative;
+    @extend %rubik-reg;
+    z-index: 2;
+  }
+
+  .subTitle {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: $black;
+    @extend %rubik-bold;
+    z-index: 2;
+  }
+
+  .subDescr {
+    width: 340px;
+    margin-top: 8px;
+    font-size: 1.15rem;
+    line-height: 1.15rem;
+    color: $black;
+    @extend %rubik-reg;
+    z-index: 2;
+  }
+
+  .bgImg {
+    position: absolute;
+    right: 0;
+    top: -80px;
+  }
+}
+
+@media (max-width: 1291px) {
+  .container {
+    .title {
+      margin: 0;
+      font-size: 7rem;
+      line-height: 7rem;
+    }
+
+    .descr {
+      margin-bottom: 114px;
+      max-width: 400px;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    .subTitle {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    .subDescr {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    .bgImg {
+      top: 20px;
+      width: 600px;
+      height: 800px;
+    }
+  }
+}
+
+
+@media (max-width: 1025px) {
+  .container {
+    .title {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    .bgImg {
+      top: 100px;
+      width: 300px;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    padding: 80px 20px;
+
+    .title {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+
+    .descr {
+      font-size: .8rem;
+      line-height: .8rem;
+    }
+
+    .subTitle {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+
+    .subDescr {
+      font-size: .8rem;
+      line-height: .8rem;
+    }
+  }
+}
+
+@media (max-width: 621px) {
+  .container {
+    padding: 60px 15px;
+
+    .title {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+
+    .descr {
+      font-size: .7rem;
+      line-height: .7rem;
+    }
+
+    .subTitle {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    .subDescr {
+      font-size: .7rem;
+      line-height: .7rem;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 551px) {
+  .container {
+    padding: 40px 10px;
+
+    .descr {
+      font-size: .5rem;
+      line-height: .5rem;
+      width: 280px;
+    }
+
+    .subTitle {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+
+    .subDescr {
+      font-size: .5rem;
+      line-height: .5rem;
+      width: 150px;
+    }
+  }
+}

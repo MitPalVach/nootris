@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.menu {
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  a {
+    @extend %rubik-reg;
+  }
+}
+
+
+@media (max-width: 1291px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    background: $white;
+    z-index: 10;
+    padding-bottom: 30px;
+    padding-left: 0;
+    margin-left: 0;
+
+    li {
+      position: relative;
+      border-bottom: 1px solid $grey;
+      margin-bottom: 10px;
+
+      a {
+        display: block;
+        padding-top: 35px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: $black;
+
+      }
+    }
+  }
+  .menu.menuActive {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    transform: translateX(0);
+    transition: all .5s;
+  }
+}

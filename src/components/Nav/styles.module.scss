@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.menu {
+  display: flex;
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin-right: 44px;
+      @extend %rubik-reg;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 1414px) {
+  .menu {
+    li {
+      a {
+        font-size: .9rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1291px) {
+  .menu {
+    display: none;
+  }
+}
