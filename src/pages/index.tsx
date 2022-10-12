@@ -1,4 +1,4 @@
-import Index from './Page/index';
+import Index from './MainPage/index';
 
 
 export default Index;

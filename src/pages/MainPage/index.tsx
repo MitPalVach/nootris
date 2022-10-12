@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 import Top from '../../components/Top';
 import Down from '../../components/Down';
 
-const Page: NextPage = () => {
+const MainPage: NextPage = () => {
 
   return (
     <Layout>
@@ -22,4 +22,4 @@ const Page: NextPage = () => {
   );
 };
 
-export default Page;
+export default MainPage;
