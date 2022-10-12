@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
-
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  images: { disableStaticImages: false },
-  sassOptions: {
-    prependData: '@use "~@styles/variables.scss" as *;'
-  }
+  swcMinify: true,
 };
+
+module.exports = nextConfig;
